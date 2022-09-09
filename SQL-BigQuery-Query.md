@@ -1,4 +1,5 @@
 # This is the place where I store used query in Google BigQuery for future references.
+- Feel free to comment.
 
 Query:
 
