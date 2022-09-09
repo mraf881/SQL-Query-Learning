@@ -6,8 +6,6 @@
 
 **Query001**
 
-Query: 
-
 `SELECT * FROM dataset.table LIMIT 1000` --Selecting all column from all column and limit 1000 result.
 
 Output:
@@ -22,13 +20,9 @@ Output:
 
 **Query002**
 
-Query:
-
 `SELECT DISTINCT * FROM dataset.table` --Selecting Unique rows from the dataset.
 
 **Query003**
-
-Query:
 
 `SELECT *, Column_ID as Column_New FROM dataset.table` --Selecting all column and renaming column to desired name from the dataset but it only add new column at the end of table.
 
@@ -43,8 +37,6 @@ Output:
 
 **Query004**
 
-Query:
-
 `SELECT * EXCEPT(Column_ID), Column_ID as Column_New FROM dataset.table` --Using EXCEPT() to not include renamed column.
 
 Output:
@@ -56,3 +48,14 @@ Output:
 |\*\*|\*\*|\*\*|
 |\*\*\*|\*\*\*|\*\*\*|
 
+
+**Query004**
+
+`SELECT * FROM dataset.table WHERE COLUMN3 IS NULL` --Selecting the column1 contain null value.
+
+Output:
+|Column_ID|Column2|Column3|
+|-------|-------|-------|
+|4|test|null|
+|5|test|null|
+|\*\*\*|\*\*\*|\*\*\*|
