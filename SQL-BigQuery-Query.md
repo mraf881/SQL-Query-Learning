@@ -2,7 +2,7 @@
 - Feel free to comment.
 - Give positive feedback.
 - FYI, this is markdown file.
-- Some of the queries, I do not included output. Sorry about that.
+- Some of the queries, I do not include output. Sorry about that.
 
 **Query001**
 
