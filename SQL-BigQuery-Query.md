@@ -30,7 +30,7 @@ Query:
 
 Query:
 
-`SELECT *, column1 as Column_New FROM dataset.table` --Selecting all column and renaming column to desired name from the dataset but it only add new column at the end of table.
+`SELECT *, Column_ID as Column_New FROM dataset.table` --Selecting all column and renaming column to desired name from the dataset but it only add new column at the end of table.
 
 Output:
 |Column_ID|Column2|Column3|Column_One|
@@ -40,4 +40,19 @@ Output:
 |\*|\*|\*|\*|
 |\*\*|\*\*|\*\*|\*\*|
 |\*\*\*|\*\*\*|\*\*\*|\*\*\*|
+
+**Query004**
+
+Query:
+
+`SELECT * EXCEPT(Column_ID), Column_ID as Column_New FROM dataset.table` --Using EXCEPT() to not include renamed column.
+
+Output:
+|Column2|Column3|Column_One|
+|-------|-------|--|
+|test|test|1
+|test|test|2
+|\*|\*|\*|
+|\*\*|\*\*|\*\*|
+|\*\*\*|\*\*\*|\*\*\*|
 
