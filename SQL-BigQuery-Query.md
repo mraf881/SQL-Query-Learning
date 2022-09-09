@@ -11,7 +11,7 @@ Query:
 `SELECT * FROM dataset.table LIMIT 1000` --Selecting all column from all column and limit 1000 result.
 
 Output:
-|Column1|Column2|Column3|
+|Column_ID|Column2|Column3|
 |-------|-------|-------|
 |1|test|test|
 |2|test|test|
@@ -25,3 +25,19 @@ Output:
 Query:
 
 `SELECT DISTINCT * FROM dataset.table` --Selecting Unique rows from the dataset.
+
+**Query003**
+
+Query:
+
+`SELECT *, column1 as Column_New FROM dataset.table` --Selecting all column and renaming column to desired name from the dataset but it only add new column at the end of table.
+
+Output:
+|Column_ID|Column2|Column3|Column_One|
+|-------|-------|-------|--|
+|1|test|test|1
+|2|test|test|2
+|\*|\*|\*|\*|
+|\*\*|\*\*|\*\*|\*\*|
+|\*\*\*|\*\*\*|\*\*\*|\*\*\*|
+
