@@ -2,6 +2,10 @@
 
 SELECT * FROM dataset.table WHERE COLUMN1 IS NULL --Selecting the column1 contain null value.
 
-SELECT DISTINCT * FROM dataset.table - To show unique value only (Removed duplicate)
+SELECT DISTINCT * FROM dataset.table --To show unique value only (Removed duplicate)
 
-UPDATE dataset.table SET column='Unknown' WHERE column IS NULL - update the null value to 'Unknown' value
+UPDATE dataset.table SET column='Unknown' WHERE column IS NULL --update the null value to 'Unknown' value
+
+SELECT * FROM dataset.table WHERE OCCURRED_ON_DATE BETWEEN  '2018-08-31 09:48:00 UTC' AND '2018-09-02 05:06:00 UTC'   LIMIT 10 --to see the date between given timeframe
+
+SELECT * FROM dataset.table ORDER BY column1 DESC --Show the result from descending order.
