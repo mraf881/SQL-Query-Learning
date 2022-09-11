@@ -3,3 +3,5 @@
 SELECT * FROM dataset.table WHERE COLUMN1 IS NULL --Selecting the column1 contain null value.
 
 SELECT DISTINCT * FROM dataset.table - To show unique value only (Removed duplicate)
+
+UPDATE dataset.table SET column='Unknown' WHERE column IS NULL - update the null value to 'Unknown' value
