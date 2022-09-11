@@ -57,7 +57,7 @@ Output:
 |\*\*\*|\*\*\*|\*\*\*|
 
 
-**QUERY006**
+**QUERY005**
 
 `SELECT * FROM dataset.table ORDER BY Column1 DESC LIMIT 3` --To show the result in descending order.
 
