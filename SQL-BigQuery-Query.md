@@ -50,8 +50,19 @@ Output:
 `SELECT * FROM dataset.table WHERE COLUMN3 IS NULL` --Selecting the column1 contain null value.
 
 Output:
-|Column_ID|Column2|Column3|
+|Column_1|Column2|Column3|
 |-------|-------|-------|
 |4|test|null|
 |5|test|null|
 |\*\*\*|\*\*\*|\*\*\*|
+
+
+**QUERY006**
+
+'SELECT * FROM dataset.table ORDER BY Column1 DESC LIMIT 3' --To show the result in descending order.
+
+|Column_ID|Column2|Column3|
+|-------|-------|-------|
+|3|test|test|
+|2|test|test|
+|1|test|test|
