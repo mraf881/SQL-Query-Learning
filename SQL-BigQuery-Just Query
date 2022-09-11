@@ -1,3 +1,5 @@
 -- This I just to put the used query without any further explaination.
 
 SELECT * FROM dataset.table WHERE COLUMN1 IS NULL --Selecting the column1 contain null value.
+
+SELECT DISTINCT * FROM dataset.table - To show unique value only (Removed duplicate)
