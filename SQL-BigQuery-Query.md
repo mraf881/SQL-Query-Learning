@@ -66,3 +66,12 @@ Output:
 |3|test|test|
 |2|test|test|
 |1|test|test|
+
+**QUERY006**
+`SELECT *, SUBSTR(CAST(column3 AS STRING),12,5) AS TIME FROM dataset.table` --Convert column3 to strings datatype and extract 5 character to be shown as a time.
+|Column_ID|Column2|Column3|Time|
+|-------|-------|-------|----|
+|1|test|01-01-2022 12:00|12:00|
+|2|test|02-01-2022 15:00|15:00|
+|3|test|03-01-2022 18:00|18:00|
+
