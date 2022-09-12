@@ -10,4 +10,4 @@ SELECT * FROM dataset.table WHERE OCCURRED_ON_DATE BETWEEN  '2018-08-31 09:48:00
 
 SELECT * FROM dataset.table ORDER BY column1 DESC --Show the result from descending order.
 
-SELECT *, SUBSTR(CAST(column3 AS STRING),1,3) AS TIME FROM dataset.table LIMIT 5 --Convert column with integer datatype and extract certain character.
+SELECT *, SUBSTR(CAST(column3 AS STRING),1,3) AS TIME FROM dataset.table LIMIT 5 --Convert column3 with another datatype to strings and extract certain character.
